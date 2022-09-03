@@ -5,12 +5,12 @@
 class Kindli < Formula
   desc ""
   homepage "https://github.com/utkarsh-pro/kindli"
-  version "0.0.7"
+  version "0.1.0"
   depends_on :macos
 
   on_macos do
-    url "https://github.com/utkarsh-pro/kindli/releases/download/v0.0.7/kindli_0.0.7_Darwin_all.tar.gz"
-    sha256 "6a9acb575b5afd2dd6905560b37552cbeeda8600773268fa6d9825dac2126fe6"
+    url "https://github.com/utkarsh-pro/kindli/releases/download/v0.1.0/kindli_0.1.0_Darwin_all.tar.gz"
+    sha256 "2ed15f016afe25a76193f7eac8817f88b98a76db04792cf1395be43518e87435"
 
     def install
       bin.install "kindli"
