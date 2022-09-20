@@ -5,11 +5,11 @@
 class S3cli < Formula
   desc ""
   homepage "https://github.com/utkarsh-pro/s3cli"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
-    url "https://github.com/utkarsh-pro/s3cli/releases/download/v0.0.5/s3cli_0.0.5_darwin_all.tar.gz"
-    sha256 "99e3ae45cf71662b21abba7cfb16dc86eec5186b0689d356134dd692ef60c047"
+    url "https://github.com/utkarsh-pro/s3cli/releases/download/v0.0.6/s3cli_0.0.6_darwin_all.tar.gz"
+    sha256 "a5bd9be45096d58b5f6920bc64f4d5dd2420ffe51a79e564039bd5e8da99aed8"
 
     def install
       bin.install "s3cli"
@@ -18,16 +18,16 @@ class S3cli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/utkarsh-pro/s3cli/releases/download/v0.0.5/s3cli_0.0.5_linux_arm64.tar.gz"
-      sha256 "4dfcf6266823a9147433843e0d31072352c08b60d63ce917e51834caae8e302f"
+      url "https://github.com/utkarsh-pro/s3cli/releases/download/v0.0.6/s3cli_0.0.6_linux_arm64.tar.gz"
+      sha256 "eba102e955185487140ffb8a52673193cbd4cf84770039f8bcbcb864536929ee"
 
       def install
         bin.install "s3cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/utkarsh-pro/s3cli/releases/download/v0.0.5/s3cli_0.0.5_linux_amd64.tar.gz"
-      sha256 "8e0742007506860cf7f8585d36c20cbe6efdd1bc820638a2e26f7a4a1559a112"
+      url "https://github.com/utkarsh-pro/s3cli/releases/download/v0.0.6/s3cli_0.0.6_linux_amd64.tar.gz"
+      sha256 "b761472bb86cdc6d180ea03fc1c20256ed76bf58d914d424f6d878935d43d351"
 
       def install
         bin.install "s3cli"
