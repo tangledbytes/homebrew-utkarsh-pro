@@ -3,7 +3,7 @@ class Noobaa < Formula
   homepage "https://github.com/utkarsh-pro/noobaa-operator-copy"
   url "https://github.com/utkarsh-pro/noobaa-operator-copy.git",
       :tag      => "v5.12.11",
-      :revision => "515b054302cf8d7f57a412628ae1138d3fe458be"
+      :revision => "8f63c0874faba0b3ad000ff2a5661b7f9069699f"
   head "https://github.com/utkarsh-pro/noobaa-operator-copy.git"
 
   depends_on "go" => [:build, :test]
