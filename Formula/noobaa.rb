@@ -2,8 +2,8 @@ class Noobaa < Formula
   desc "CLI for managing NooBaa S3 service on Kubernetes/Openshift"
   homepage "https://github.com/utkarsh-pro/noobaa-operator-copy"
   url "https://github.com/utkarsh-pro/noobaa-operator-copy.git",
-      :tag      => "v5.12.16",
-      :revision => "28d10d48fbb06adefc15acd509c838f99a73c74f"
+      :tag      => "v5.12.11",
+      :revision => "4f63627fc48b0b0b774b51f6cd760926a6d0d5bb"
   head "https://github.com/utkarsh-pro/noobaa-operator-copy.git"
 
   depends_on "go" => [:build, :test]
@@ -26,7 +26,7 @@ class Noobaa < Formula
 
   test do
     output = 
-    pos = output.index "CLI version: 5.12.16"
+    pos = output.index "CLI version: 5.12.11"
     raise "Version check failed" if pos.nil?
 
     puts "Success"
